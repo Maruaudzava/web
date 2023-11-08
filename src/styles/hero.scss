@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+.hero {
+  background-color: darkcyan;
+
+  @media (min-width: $tablet) {
+    background-color: beige;
+  }
+}
+
+.hero__btn {
+  background-color: $btnColor;
+}
