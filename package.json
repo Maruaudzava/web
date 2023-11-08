@@ -1,0 +1,30 @@
+{
+  "name": "mysite4students",
+  "version": "1.0.0",
+  "description": "my site students project",
+  "homepage": "https://github.com/NatalaBoiko/mysite4students#readme",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /icecream/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatalaBoiko/mysite4students.git"
+  },
+  "keywords": [],
+  "author": "Natalia Boiko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatalaBoiko/mysite4students/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  }
+}
