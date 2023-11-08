@@ -2,10 +2,10 @@
   "name": "mysite4students",
   "version": "1.0.0",
   "description": "my site students project",
-  "homepage": "https://github.com/NatalaBoiko/mysite4students#readme",
+  "homepage": "https://mysite4students.vercel.app/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /icecream/"
+    "build": "parcel build src/*.html --public-url /mysite4students/"
   },
   "repository": {
     "type": "git",
@@ -18,12 +18,12 @@
     "url": "https://github.com/NatalaBoiko/mysite4students/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "posthtml-include": "^1.7.4"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
-    "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "parcel-reporter-clean-dist": "^1.0.4"
   }
 }
