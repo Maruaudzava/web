@@ -19,3 +19,10 @@ add <script type='module' src='./index.js'></script> to the body...
 🧐
 
 // "sass": "^1.69.5"
+
+"author": "Natalia Boiko",
+
+"license": "ISC",
+"bugs": {
+"url": "https://github.com/goitacademy/parcel-project-template/issues"
+},

@@ -15,12 +15,11 @@
   "author": "Natalia Boiko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NatalaBoiko/mysite4students/issues"
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
-  
-   
+    "modern-normalize": "^1.1.0",
+    "sass": "^1.69.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
@@ -29,5 +28,3 @@
     "posthtml-include": "^1.7.4"
   }
 }
-
-
