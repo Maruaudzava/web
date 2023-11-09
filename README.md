@@ -15,14 +15,6 @@ shift+! in index.html file creates html content
 add .posthtmlrc file to the root directory for ability include html in html
 
 add <script type='module' src='./index.js'></script> to the body...
+add Live Sass Compiler v5.5.1 Extention
 
 🧐
-
-// "sass": "^1.69.5"
-
-"author": "Natalia Boiko",
-
-"license": "ISC",
-"bugs": {
-"url": "https://github.com/goitacademy/parcel-project-template/issues"
-},

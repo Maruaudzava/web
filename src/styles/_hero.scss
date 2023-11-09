@@ -1,16 +1,13 @@
 @import "./variables.scss";
 
 .hero {
-  // height: 100vh;
-  // flex-wrap: wrap;
   gap: 5vw;
 
   @media (orientation: "landscape") {
     flex-direction: row;
-    // height: 100vh;
     width: auto;
     padding-right: 6vw;
-    padding-top: 20px;
+    align-items: flex-end;
   }
 }
 
@@ -35,8 +32,8 @@
   gap: 32px;
 
   @media (orientation: "landscape") {
-    margin-bottom: 0;
-    margin-top: auto;
+    // margin-bottom: 0;
+    // margin-top: auto;
 
     display: flex;
     flex-direction: column;
