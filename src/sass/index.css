@@ -1,0 +1,205 @@
+:root {
+  --main-section-bg: #ffb8ca;
+  --headerBg: #ffb8ca7c;
+  --second-section-bg: #ffffff;
+  --third-section-bg: #fff5f6;
+  --review-bg: #fafafa;
+  --review-bg-clear: #fafafa00;
+  --review-bg-lines: #e1e1e1;
+  --font-color-one: rgba(255, 255, 255, 1);
+  --font-color-two: rgba(212, 20, 67, 1);
+  --font-color-three: #907e82;
+  --font-color-four: #0000000;
+  --font-color-five: #ffa5ba;
+  --secton_side_padding: 20px;
+  --secton_tablet_padding: 34px;
+  --secton_desktop_padding: 100px;
+  --animationDuration: 1s;
+  --transitionDuration: 500ms;
+  --btnShadow: 0px 4px 4px #00000040;
+}
+
+:root {
+  --main-section-bg: #ffb8ca;
+  --headerBg: #ffb8ca7c;
+  --second-section-bg: #ffffff;
+  --third-section-bg: #fff5f6;
+  --review-bg: #fafafa;
+  --review-bg-clear: #fafafa00;
+  --review-bg-lines: #e1e1e1;
+  --font-color-one: rgba(255, 255, 255, 1);
+  --font-color-two: rgba(212, 20, 67, 1);
+  --font-color-three: #907e82;
+  --font-color-four: #0000000;
+  --font-color-five: #ffa5ba;
+  --secton_side_padding: 20px;
+  --secton_tablet_padding: 34px;
+  --secton_desktop_padding: 100px;
+  --animationDuration: 1s;
+  --transitionDuration: 500ms;
+  --btnShadow: 0px 4px 4px #00000040;
+}
+
+body {
+  background-color: #000;
+}
+
+header {
+  width: 100vw;
+  padding: 6px var(--secton_side_padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 105;
+}
+
+.header__logo {
+  -webkit-animation-name: heade__logo;
+          animation-name: heade__logo;
+  -webkit-animation-duration: var(--animationDuration);
+          animation-duration: var(--animationDuration);
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes heade__logo {
+  0% {
+    opacity: 0;
+    margin-left: -300px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes heade__logo {
+  0% {
+    opacity: 0;
+    margin-left: -300px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+.header__nav {
+  display: none;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+.header__nav-item a {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: var(--font-color-one);
+}
+
+.header__btns {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.burger__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 1000ms;
+}
+.burger__button:focus, .burger__button:hover {
+  scale: 110%;
+  rotate: 90deg;
+}
+.burger__button svg {
+  width: 20px;
+  height: 12px;
+}
+
+.header__btn {
+  width: 160px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  opacity: 0;
+}
+.header__btn svg {
+  width: 10px;
+  height: 10px;
+  stroke: var(--font-color-two);
+}
+.header__btn:focus svg, .header__btn:hover svg {
+  stroke: var(--font-color-one);
+}
+
+.header__nav,
+.burger__menu,
+.header__btn {
+  -webkit-animation-name: burger__menu;
+          animation-name: burger__menu;
+  -webkit-animation-duration: var(--animationDuration);
+          animation-duration: var(--animationDuration);
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes burger__menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes burger__menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.footer {
+  width: 100vw;
+  margin-top: auto;
+  background-color: var(--third-section-bg);
+  padding: 25px;
+  border-top: 1px solid var(--review-bg-lines);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  line-height: 1.52;
+  color: var(--font-color-three);
+}
+.footer p {
+  display: flex;
+}
+.footer a {
+  color: var(--font-color-three);
+  margin-left: 5px;
+}
+.footer:focus a, .footer:hover a {
+  text-shadow: 0 0 3px rgba(212, 20, 67, 0), 0px 0px 3px #fff, 0px 0px 5px #fff, 0px 0px 7px #fff, 0 0 1px var(--font-color-three);
+  transform: scale(1.05);
+  color: var(--font-color-five);
+}/*# sourceMappingURL=index.css.map */

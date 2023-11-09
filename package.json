@@ -1,8 +1,8 @@
 {
-  "name": "mysite4students",
-  "version": "1.0.0",
-  "description": "my site students project",
-  "homepage": "https://mysite4students.vercel.app/",
+  "name": "st",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://natalaboiko.github.io/mysite4students",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /mysite4students/"
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/NatalaBoiko/mysite4students.git"
   },
   "keywords": [],
-  "author": "Natalia Boiko",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
@@ -23,7 +23,8 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
-    "parcel-reporter-clean-dist": "^1.0.4",
+    "parcel-reporter-clean-dimysite4students": "^1.0.4",
     "posthtml-include": "^1.7.4"
-  }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
