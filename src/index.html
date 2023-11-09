@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.scss" />
 
-    <title>Document</title>
+    <title>My site</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
   </head>
   <body>
-    <header>heder</header>
+    <include src="sections/header.html"></include>
     <main>
       <include src="sections/hero.html"></include>
-      <ul></ul>
+      <include src="sections/about.html"></include>
+      <include src="sections/portfolio.html"></include>
+      <include src="sections/contacts.html"></include>
     </main>
-    <footer>footer</footer>
+    <include src="sections/footer.html"></include>
+
     <script type="module" src="./index.js"></script>
   </body>
 </html>
