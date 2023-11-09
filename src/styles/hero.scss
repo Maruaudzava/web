@@ -1,10 +1,19 @@
 @import "./variables.scss";
 
 .hero {
-  background-color: darkcyan;
+  height: 100vh;
+  background-image: url("./images/hero.webp");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-  @media (min-width: $tablet) {
-    background-color: beige;
+  @media ((min-width: $tablet) or (orientation: "landscape")) {
+    background-position: 0px 0px;
+    background-size: auto 100vh;
+    // background-size: 36% auto;
+  }
+
+  @media (min-width: $desktop) {
   }
 }
 
