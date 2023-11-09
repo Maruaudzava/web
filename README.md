@@ -15,3 +15,5 @@ shift+! in index.html file creates html content
 add .posthtmlrc file to the root directory for ability include html in html
 
 add <script type='module' src='./index.js'></script> to the body...
+
+🧐
