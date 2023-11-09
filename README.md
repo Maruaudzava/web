@@ -17,3 +17,5 @@ add .posthtmlrc file to the root directory for ability include html in html
 add <script type='module' src='./index.js'></script> to the body...
 
 🧐
+
+// "sass": "^1.69.5"
