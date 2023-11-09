@@ -5,6 +5,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition-duration: 500ms;
 }
 
 body {
@@ -24,6 +25,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+button {
+  background-color: $btnColor;
 }
 
 a {
