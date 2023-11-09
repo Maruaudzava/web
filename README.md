@@ -18,3 +18,4 @@ add <script type='module' src='./index.js'></script> to the body...
 add Live Sass Compiler v5.5.1 Extention
 
 🧐
+"sass": "^1.69.5"
