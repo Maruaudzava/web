@@ -25,10 +25,9 @@
   }
 
   @media (orientation: "landscape") {
-    width: 32vw;
+    width: 40vw;
     flex: none;
     & img {
-      height: 100%;
       object-fit: cover;
     }
   }

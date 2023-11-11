@@ -80,11 +80,10 @@ ul {
 }
 @media (orientation: landscape) {
   .hero__imgWrapper {
-    width: 32vw;
+    width: 40vw;
     flex: none;
   }
   .hero__imgWrapper img {
-    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
