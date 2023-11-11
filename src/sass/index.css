@@ -33,6 +33,7 @@ button {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul {
@@ -43,6 +44,7 @@ ul {
   position: fixed;
   width: 100%;
   padding: 20px;
+  z-index: 1;
 }
 
 .header__menuBurger {
@@ -52,26 +54,39 @@ ul {
 
 .hero {
   gap: 5vw;
+  justify-content: space-between;
 }
 @media (orientation: landscape) {
   .hero {
+    height: 100vh;
     flex-direction: row;
     padding-right: 6vw;
     align-items: flex-end;
   }
 }
 
-.hero__img {
-  height: auto;
+.hero__imgWrapper {
+  height: 100vh;
   width: 100%;
-  gap: 5vw;
+  flex: 1;
+}
+.hero__imgWrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  -o-object-position: top;
+     object-position: top;
 }
 @media (orientation: landscape) {
-  .hero__img {
-    height: 100vh;
-    width: auto;
-    -o-object-position: 0 0;
-       object-position: 0 0;
+  .hero__imgWrapper {
+    width: 32vw;
+    flex: none;
+  }
+  .hero__imgWrapper img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -88,9 +103,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 20vh;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    margin-bottom: 0;
   }
 }
 
@@ -101,32 +114,44 @@ ul {
 }
 .hero__nameWrapper h1 {
   font-weight: 700;
-  font-size: clamp(40px, 8vw, 96px);
+  font-size: clamp(40px, 7vw, 96px);
   margin-bottom: 12px;
 }
 .hero__nameWrapper p {
   font-weight: 300;
-  font-size: clamp(20px, 5vw, 36px);
+  font-size: clamp(20px, 3vw, 36px);
 }
 
 .hero__sossialLinks {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 336px;
 }
 .hero__sossialLinks li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.hero__sossialLinks li a {
   width: clamp(45px, 5vw, 60px);
   height: clamp(45px, 5vw, 60px);
+  position: relative;
 }
 .hero__sossialLinks li img {
-  width: clamp(45px, 5vw, 60px);
-  height: clamp(45px, 5vw, 60px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-@media (min-width: 1200px) {
+@media (orientation: landscape) {
   .hero__sossialLinks {
     margin-right: 0;
     margin-left: auto;
+    max-width: 300px;
   }
 }
 
