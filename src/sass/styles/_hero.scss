@@ -75,7 +75,10 @@
 .hero__sossialLinks {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  gap: 16px;
+  // width: 100%;
+
+  // max-width: 300px;
 
   & li {
     width: fit-content;
@@ -100,7 +103,8 @@
   @media (orientation: landscape) {
     margin-right: 0;
     margin-left: auto;
-    max-width: 300px;
+    gap: 20px;
+    // max-width: 300px;
   }
 }
 

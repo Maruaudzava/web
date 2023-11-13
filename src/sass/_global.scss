@@ -28,7 +28,7 @@ section {
 }
 
 .container {
-  max-width: 1440px;
+  width: 90%;
   margin: 58px 16px;
   display: flex;
   flex-direction: column;
@@ -40,10 +40,11 @@ section {
   }
   @media (min-width: $desktop) {
     margin: 130px 106px;
+    max-width: 1440px;
   }
 }
 
-button {
+.button {
   background-color: $btnColor;
 
   text-align: center;
@@ -51,6 +52,11 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  width: 174px;
+  height: 52px;
+  border-radius: 10px;
+  border: none;
 }
 
 a {

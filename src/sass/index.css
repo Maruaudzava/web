@@ -28,7 +28,7 @@ section {
 }
 
 .container {
-  max-width: 1440px;
+  width: 90%;
   margin: 58px 16px;
   display: flex;
   flex-direction: column;
@@ -44,16 +44,21 @@ section {
 @media (min-width: 1200px) {
   .container {
     margin: 130px 106px;
+    max-width: 1440px;
   }
 }
 
-button {
+.button {
   background-color: #ffa800;
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  width: 174px;
+  height: 52px;
+  border-radius: 10px;
+  border: none;
 }
 
 a {
@@ -160,7 +165,7 @@ h2 {
 .hero__sossialLinks {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  gap: 16px;
 }
 .hero__sossialLinks li {
   width: -webkit-fit-content;
@@ -186,7 +191,7 @@ h2 {
   .hero__sossialLinks {
     margin-right: 0;
     margin-left: auto;
-    max-width: 300px;
+    gap: 20px;
   }
 }
 
@@ -209,4 +214,26 @@ h2 {
   margin-right: 12px;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.about__btn {
+  margin-right: auto;
+}
+
+.contact {
+  margin-right: auto;
+}
+.contact p, .contact a {
+  color: #fff;
+  font-style: normal;
+  line-height: normal;
+}
+.contact p {
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-size: clamp(20px, 3vw, 40px);
+}
+.contact a {
+  font-weight: 300;
+  font-size: clamp(16px, 2vw, 40px);
 }/*# sourceMappingURL=index.css.map */

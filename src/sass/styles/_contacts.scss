@@ -1,1 +1,21 @@
+.contact {
+  margin-right: auto;
 
+  & p,
+  & a {
+    color: $mainFontColor;
+    font-style: normal;
+    line-height: normal;
+    // font-size: clamp(20px, 3vw, 40px);
+  }
+  & p {
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: clamp(20px, 3vw, 40px);
+  }
+
+  & a {
+    font-weight: 300;
+    font-size: clamp(16px, 2vw, 40px);
+  }
+}
