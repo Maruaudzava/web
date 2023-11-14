@@ -1,0 +1,31 @@
+@import "../variables";
+
+.sossialLinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  & li {
+    width: fit-content;
+    height: fit-content;
+
+    & a {
+      width: clamp(45px, 5vw, 60px);
+      height: clamp(45px, 5vw, 60px);
+      position: relative;
+    }
+
+    & img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (orientation: landscape) {
+    margin-right: 0;
+    margin-left: auto;
+    gap: 20px;
+  }
+}
