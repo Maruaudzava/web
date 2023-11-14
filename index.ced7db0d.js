@@ -1,2 +1,0 @@
-!function(){console.log("hello world!!"),console.log("window.innerWidth",window.innerWidth),console.log("window.innerHeight",window.innerHeight);var n=window.innerWidth;window.innerHeight;window.addEventListener("resize",(function(){n!==window.innerWidth?(n=window.innerWidth,console.log("window.innerWidth",window.innerWidth)):(window.innerHeight,console.log("window.innerHeight",window.innerHeight))}))}();
-//# sourceMappingURL=index.ced7db0d.js.map

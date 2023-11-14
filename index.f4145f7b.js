@@ -1,2 +1,0 @@
-console.log("hello world!!"),console.log("window.innerWidth",window.innerWidth),console.log("window.innerHeight",window.innerHeight);let n=window.innerWidth,i=window.innerHeight;window.addEventListener("resize",(()=>{n!==window.innerWidth?(n=window.innerWidth,console.log("window.innerWidth",window.innerWidth)):(i=window.innerHeight,console.log("window.innerHeight",window.innerHeight))}));
-//# sourceMappingURL=index.f4145f7b.js.map
