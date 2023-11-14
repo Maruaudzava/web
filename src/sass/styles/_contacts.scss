@@ -1,3 +1,5 @@
+@import "../variables";
+
 .contact {
   margin-right: auto;
 
@@ -17,5 +19,12 @@
   & a {
     font-weight: 300;
     font-size: clamp(16px, 2vw, 40px);
+  }
+
+  & a:hover,
+  & a:focus {
+    color: $btnColor;
+    // text-decoration: underline;
+    // text-underline-offset: 6px;
   }
 }
