@@ -27,4 +27,15 @@
     // text-decoration: underline;
     // text-underline-offset: 6px;
   }
+
+  & .contacts_sossialLinks {
+    margin-right: auto;
+  }
+}
+
+.contacts__container {
+  & .sossialLinks {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }

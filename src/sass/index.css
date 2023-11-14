@@ -104,6 +104,39 @@ h2 {
   margin-right: auto;
 }
 
+.sossialLinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.sossialLinks li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.sossialLinks li a {
+  width: clamp(45px, 5vw, 60px);
+  height: clamp(45px, 5vw, 60px);
+  position: relative;
+}
+.sossialLinks li img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (orientation: landscape) {
+  .sossialLinks {
+    margin-right: 0;
+    margin-left: auto;
+    gap: 20px;
+  }
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -190,39 +223,6 @@ h2 {
   font-size: clamp(20px, 3vw, 36px);
 }
 
-.hero__sossialLinks {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-}
-.hero__sossialLinks li {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.hero__sossialLinks li a {
-  width: clamp(45px, 5vw, 60px);
-  height: clamp(45px, 5vw, 60px);
-  position: relative;
-}
-.hero__sossialLinks li img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-@media (orientation: landscape) {
-  .hero__sossialLinks {
-    margin-right: 0;
-    margin-left: auto;
-    gap: 20px;
-  }
-}
-
 .hero__btn {
   background-color: #ffa800;
 }
@@ -268,11 +268,19 @@ h2 {
 .contact a:hover, .contact a:focus {
   color: #ffa800;
 }
+.contact .contacts_sossialLinks {
+  margin-right: auto;
+}
+
+.contacts__container .sossialLinks {
+  margin-right: auto;
+  margin-left: 0;
+}
 
 .footer {
   width: 100%;
   border-top: 1px solid #ffa800;
-  padding: 36px 24px 24px;
+  padding: 24px;
 }
 
 .footer__container {
