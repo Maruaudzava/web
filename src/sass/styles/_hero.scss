@@ -1,8 +1,13 @@
 @import "../variables";
 
 .hero {
+  padding: 0;
+}
+
+.hero__container {
   gap: 5vw;
   justify-content: space-between;
+  padding: 0;
 
   @media (orientation: "landscape") {
     height: 100vh;
