@@ -100,8 +100,6 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-left: 0;
-  margin-right: auto;
 }
 
 .sossialLinks {
@@ -227,21 +225,51 @@ h2 {
   background-color: #ffa800;
 }
 
+.about h2 {
+  margin-right: auto;
+}
 .about p {
   font-size: clamp(16px, 2vw, 32px);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .about p {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+.hideText {
+  height: clamp(80px, 5.5vw, 130px);
+}
+
+.showText {
+  height: calc(388px - 35vw);
 }
 
 .about__moreBtn {
   background-color: transparent;
   border: none;
   color: #ffa800;
+  font-size: clamp(16px, 2vw, 28px);
   margin-left: auto;
-  margin-right: 12px;
   text-decoration: underline;
   text-underline-offset: 3px;
+  cursor: pointer;
+}
+.about__moreBtn:focus, .about__moreBtn:hover {
+  scale: 0.95;
+}
+@media (min-width: 768px) {
+  .about__moreBtn {
+    display: none;
+  }
 }
 
 .about__btn {
