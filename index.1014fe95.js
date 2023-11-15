@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".about__moreBtn"),s=document.querySelector(".about p");console.log(s.className.includes("hideText"));e.addEventListener("click",(function(){s.className.includes("hideText")?(s.classList.remove("hideText"),s.classList.add("showText")):(s.classList.add("hideText"),s.classList.remove("showText"))})),console.log("button.js")}();
+//# sourceMappingURL=index.1014fe95.js.map
