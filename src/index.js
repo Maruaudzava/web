@@ -1,5 +1,5 @@
 import "./js/aboutBtn";
-// import "./js/button";
+import "./js/button";
 
 // console.log("hello world!!");
 
