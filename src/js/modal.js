@@ -1,16 +1,18 @@
 const openModalBtn = document.querySelector(".about__btn");
-
 const modal = document.querySelector("#modal");
-
 const backDrop = document.querySelector("#modalBackDrop");
-
-const body = document.querySelector("body");
+const body = document.body;
 
 const closeBtn = document.querySelector(".modal__close");
 
 const openModalHendler = () => {
   modal.classList.add("modal__visible");
-  backDrop.classList.add("modal__backDrop");
+
+  setTimeout(() => {
+    backDrop.classList.add("modal__backDrop-visible");
+  }, 100);
+
+  //   contactForm.classList.add("modal__form");
   body.style.overflow = "hidden";
   //   console.log(modal.className);
   //   console.log(modal.classList);
@@ -18,17 +20,20 @@ const openModalHendler = () => {
 };
 
 const closeModalhandler = () => {
-  modal.classList.remove("modal__visible");
-  backDrop.classList.remove("modal__backDrop");
-  body.style.overflow = "auto";
+  backDrop.classList.remove("modal__backDrop-visible");
+
+  setTimeout(() => {
+    modal.classList.remove("modal__visible");
+    body.style.overflow = "auto";
+  }, 1000);
 };
 
 const closeOnBackDrop = (e) => {
   if (e.target === e.currentTarget) {
     closeModalhandler();
   }
-  console.log(e.target);
-  console.log(e.currentTarget);
+  //   console.log(e.target);
+  //   console.log(e.currentTarget);
 };
 
 const closeModalByescape = (e) => {
