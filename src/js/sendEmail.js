@@ -1,3 +1,5 @@
+import { closeModalhandler } from "./modal";
+
 // const btn = document.getElementById("form__btn");
 const form = document.getElementById("modalForm");
 
@@ -8,6 +10,7 @@ form.addEventListener("submit", function (event) {
     () => {
       alert("Sent!");
       form.reset();
+      closeModalhandler();
     },
     (err) => {
       alert(JSON.stringify(err));

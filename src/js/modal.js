@@ -19,7 +19,7 @@ const openModalHendler = () => {
   //   console.log(modal.className.includes("modal__visible"));
 };
 
-const closeModalhandler = () => {
+export const closeModalhandler = () => {
   backDrop.classList.remove("modal__backDrop-visible");
 
   setTimeout(() => {
