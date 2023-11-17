@@ -19,12 +19,13 @@ const openModalHendler = () => {
   //   console.log(modal.className.includes("modal__visible"));
 };
 
-const closeModalhandler = () => {
+export const closeModalhandler = () => {
   backDrop.classList.remove("modal__backDrop-visible");
 
   setTimeout(() => {
     modal.classList.remove("modal__visible");
-    body.style.overflow = "auto";
+    body.style.overflowX = "hidden";
+    body.style.overflowY = "auto";
   }, 1000);
 };
 

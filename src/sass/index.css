@@ -606,6 +606,7 @@ h2 {
 
 .modal__visible {
   display: flex;
+  z-index: 10;
 }
 
 .modal__backDrop-visible,
