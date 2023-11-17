@@ -19,7 +19,8 @@
     "url": "https://github.com/NatalaBoiko/mysite4students/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "swiper": "^11.0.4"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
