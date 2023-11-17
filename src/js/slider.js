@@ -33,10 +33,10 @@ new Swiper(".swiper-container", {
 
 const sliderContainer = document.querySelector(".swiper-container");
 const desktopPortfolio = document.querySelector(".desktop-portfolio");
-console.log(sliderContainer);
+// console.log(sliderContainer);
 
 const hiddenSlider = () => {
-  console.log(window.innerWidth);
+  // console.log(window.innerWidth);
   if (window.innerWidth >= 1200) {
     sliderContainer.classList.add("visually-hidden");
   } else {

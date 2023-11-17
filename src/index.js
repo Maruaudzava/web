@@ -2,6 +2,7 @@ import "./js/aboutBtn";
 import "./js/button";
 import "./js/modal";
 import "./js/slider";
+import "./js/sendEmail";
 
 // console.log("hello world!!");
 
