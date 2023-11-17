@@ -1,6 +1,7 @@
 import "./js/aboutBtn";
 import "./js/button";
 import "./js/modal";
+import "./js/slider";
 
 // console.log("hello world!!");
 
