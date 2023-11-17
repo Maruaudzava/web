@@ -345,11 +345,22 @@ h2 {
 
 .portfolio__title {
   color: #fff;
+  margin-bottom: 40px;
   font-family: Arial;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (min-width: 768px) {
+  .portfolio__title {
+    margin-bottom: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio__title {
+    margin-bottom: 20px;
+  }
 }
 
 .swiper-container {
@@ -359,7 +370,19 @@ h2 {
 
 .swiper-scrollbar {
   color: #ffa800;
+  background-color: #5c5c5c !important;
+  bottom: -28px !important;
+}
+@media (min-width: 768px) {
+  .swiper-scrollbar {
+    bottom: -52px !important;
+  }
+}
+
+.swiper-scrollbar-drag {
+  height: 8px !important;
   background-color: #ffa800 !important;
+  top: -1px !important;
 }
 
 .swiper-slide {
@@ -384,6 +407,23 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.swiper-slide__title1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.swiper-slide__title2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .swiper-slide__title2 {
+    margin-bottom: 22px;
+  }
 }
 
 .visually-hidden {
@@ -452,22 +492,24 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   margin-top: 70px;
-  box-shadow: 14px -63px 400px 58px #ffa800;
-  -webkit-box-shadow: 14px -63px 400px 58px #ffa800;
-  -moz-box-shadow: 14px -63px 400px 58px #ffa800;
+  margin-right: auto;
+  margin-left: 8px;
 }
 @media (min-width: 768px) {
   .portfolio__button {
     width: 239px;
     height: 62px;
     font-size: 20px;
-    margin-left: 0px;
+    margin-left: 8px;
+    margin-right: auto;
   }
 }
 @media (min-width: 1200px) {
   .portfolio__button {
     width: 460px;
     height: 106px;
+    font-size: 36px;
+    margin-right: 0;
     margin-left: auto;
   }
 }
