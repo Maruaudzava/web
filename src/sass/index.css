@@ -111,8 +111,10 @@ h2 {
   gap: 16px;
 }
 .sossialLinks li {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -293,6 +295,7 @@ h2 {
 }
 @media (min-width: 768px) {
   .about p {
+    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -452,9 +455,6 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   margin-top: 70px;
-  box-shadow: 14px -63px 400px 58px #ffa800;
-  -webkit-box-shadow: 14px -63px 400px 58px #ffa800;
-  -moz-box-shadow: 14px -63px 400px 58px #ffa800;
 }
 @media (min-width: 768px) {
   .portfolio__button {
@@ -564,6 +564,7 @@ h2 {
 
 .modal__visible {
   display: flex;
+  z-index: 10;
 }
 
 .modal__backDrop-visible,
@@ -615,6 +616,7 @@ h2 {
   width: 300px;
 }
 .modal__form-inputsWrapper {
+  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
 }
@@ -660,6 +662,9 @@ h2 {
 .modal__form-content input::-moz-placeholder, .modal__form-content textarea::-moz-placeholder {
   font-size: 14px;
 }
+.modal__form-content input:-ms-input-placeholder, .modal__form-content textarea:-ms-input-placeholder {
+  font-size: 14px;
+}
 .modal__form-content input::placeholder, .modal__form-content textarea::placeholder {
   font-size: 14px;
 }
@@ -667,6 +672,10 @@ h2 {
   position: relative;
 }
 .modal__form-content textarea::-moz-placeholder {
+  position: absolute;
+  bottom: 4px;
+}
+.modal__form-content textarea:-ms-input-placeholder {
   position: absolute;
   bottom: 4px;
 }
