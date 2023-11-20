@@ -129,6 +129,7 @@
 
     & textarea {
       position: relative;
+      resize: none;
       &::placeholder {
         position: absolute;
         bottom: 4px;

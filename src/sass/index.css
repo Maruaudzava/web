@@ -734,6 +734,7 @@ h2 {
 }
 .modal__form-content textarea {
   position: relative;
+  resize: none;
 }
 .modal__form-content textarea::-moz-placeholder {
   position: absolute;

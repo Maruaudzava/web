@@ -1,24 +1,7 @@
 import { closeModalhandler } from "./modal";
 
-// const form = document.getElementById("modalForm");
-
-// form.addEventListener("submit", function (event) {
-//   event.preventDefault();
-
-//   emailjs.sendForm("service_cknjun9", "template_4w4291a", this).then(
-//     () => {
-//       alert("Sent!");
-//       form.reset();
-//       closeModalhandler();
-//     },
-//     (err) => {
-//       alert(JSON.stringify(err));
-//     }
-//   );
-// });
-
-const formBtn = document.querySelector("#form__btn");
-const form = document.querySelector("#modalForm");
+const formBtn = document.querySelector("#modalForm");
+const form = document.querySelector("#form__btn");
 
 console.dir(form);
 
@@ -28,6 +11,8 @@ const sendEmail = () => {
     email_id: document.getElementById("email").value,
     message: document.getElementById("message").value,
   };
+
+  console.log(templateParams);
 
   emailjs.send("service_cknjun9", "template_4w4291a", templateParams).then(
     function (response) {
@@ -43,6 +28,6 @@ const sendEmail = () => {
 formBtn.addEventListener("click", (e) => {
   e.preventDefault();
   sendEmail();
-  form.reset();
+  // form.reset();
   closeModalhandler();
 });
