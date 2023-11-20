@@ -1,7 +1,7 @@
 import { closeModalhandler } from "./modal";
 
-const formBtn = document.querySelector("#modalForm");
-const form = document.querySelector("#form__btn");
+const form = document.querySelector("#modalForm");
+const formBtn = document.querySelector("#form__btn");
 
 console.dir(form);
 
@@ -22,12 +22,11 @@ const sendEmail = () => {
       console.log("FAILED...", error);
     }
   );
-  console.log(templateParams);
 };
 
 formBtn.addEventListener("click", (e) => {
   e.preventDefault();
   sendEmail();
-  // form.reset();
+  form.reset();
   closeModalhandler();
 });
