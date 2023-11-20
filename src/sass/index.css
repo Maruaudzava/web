@@ -111,8 +111,10 @@ h2 {
   gap: 16px;
 }
 .sossialLinks li {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -293,6 +295,7 @@ h2 {
 }
 @media (min-width: 768px) {
   .about p {
+    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -364,8 +367,27 @@ h2 {
 }
 
 .swiper-container {
-  max-width: 100%;
+  width: 100%;
+  height: 400px;
   position: relative;
+}
+.swiper-container .swiper-button-prev, .swiper-container .swiper-button-next {
+  color: rgba(255, 255, 255, 0.6);
+  top: auto;
+  bottom: 44%;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+.swiper-slide__content-container {
+  width: 100%;
+  position: relative;
+}
+.swiper-slide__content-container img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-scrollbar {
@@ -658,6 +680,7 @@ h2 {
   width: 300px;
 }
 .modal__form-inputsWrapper {
+  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
 }
@@ -703,6 +726,9 @@ h2 {
 .modal__form-content input::-moz-placeholder, .modal__form-content textarea::-moz-placeholder {
   font-size: 14px;
 }
+.modal__form-content input:-ms-input-placeholder, .modal__form-content textarea:-ms-input-placeholder {
+  font-size: 14px;
+}
 .modal__form-content input::placeholder, .modal__form-content textarea::placeholder {
   font-size: 14px;
 }
@@ -711,6 +737,10 @@ h2 {
   resize: none;
 }
 .modal__form-content textarea::-moz-placeholder {
+  position: absolute;
+  bottom: 4px;
+}
+.modal__form-content textarea:-ms-input-placeholder {
   position: absolute;
   bottom: 4px;
 }
