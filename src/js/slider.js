@@ -7,17 +7,19 @@ new Swiper(".swiper-container", {
     enabled: true,
   },
   // mousewheel: true,
+
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    850: {
+      slidesPerView: 2,
+      spaceBetween: 0,
     },
     1200: {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    1440: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      // spaceBetween: 40,
     },
   },
 
