@@ -55,3 +55,4 @@ new Swiper(".swiper-container", {
 // };
 
 // window.addEventListener("load", hiddenSlider);
+// window.addEventListener("resize", hiddenSlider);

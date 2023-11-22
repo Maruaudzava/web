@@ -25,7 +25,7 @@ export const closeModalhandler = () => {
   setTimeout(() => {
     modal.classList.remove("modal__visible");
     body.style.overflowX = "hidden";
-    body.style.overflowY = "auto";
+    body.style.overflow = "auto";
   }, 1000);
 };
 
