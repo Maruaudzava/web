@@ -20,6 +20,7 @@ new Swiper(".swiper-container", {
     1200: {
       slidesPerView: 3,
       // spaceBetween: 40,
+      loop: false,
     },
   },
 
@@ -58,15 +59,16 @@ new Swiper(".swiper-container", {
 
 // const hiddenSlider = () => {
 //   if (window.innerWidth > 1200) {
-//     sliderContainer.style.display = "none";
-//     desktopPortfolio.style.display = "block";
+//     sliderContainer.classList.add("hiddenPortfolio");
+//     desktopPortfolio.classList.remove("hiddenPortfolio");
+//     // sliderContainer.style.display = "none";
+//     // desktopPortfolio.style.display = "flex";
 //   } else {
-//     sliderContainer.style = "display:block";
-//     desktopPortfolio.style.display = "none";
+//     sliderContainer.classList.remove("hiddenPortfolio");
+//     desktopPortfolio.classList.add("hiddenPortfolio");
+//     // sliderContainer.style.display = "flex";
+//     // desktopPortfolio.style.display = "none";
 //   }
 // };
 
 // window.addEventListener("resize", hiddenSlider);
-
-// console.log(sliderContainer);
-// console.log(desktopPortfolio.style);
