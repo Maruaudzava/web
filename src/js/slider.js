@@ -41,9 +41,9 @@ new Swiper(".swiper-container", {
   },
 });
 
-// const sliderContainer = document.querySelector(".swiper-container");
-// const desktopPortfolio = document.querySelector(".desktop-portfolio");
-// // console.log(sliderContainer);
+const sliderContainer = document.querySelector(".swiper-container");
+const desktopPortfolio = document.querySelector(".desktop-portfolio");
+// console.log(sliderContainer);
 
 // const hiddenSlider = () => {
 //   // console.log(window.innerWidth);
@@ -55,4 +55,15 @@ new Swiper(".swiper-container", {
 // };
 
 // window.addEventListener("load", hiddenSlider);
-// window.addEventListener("resize", hiddenSlider);
+
+const hiddenSlider = () => {
+  if (window.innerWidth > 1200) {
+    sliderContainer.style.display = "none";
+    desktopPortfolio.style.display = "flex";
+  } else {
+    sliderContainer.style.display = "flex";
+    desktopPortfolio.style.display = "none";
+  }
+};
+
+window.addEventListener("resize", hiddenSlider);
