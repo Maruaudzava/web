@@ -7,6 +7,10 @@ new Swiper(".swiper-container", {
     enabled: true,
   },
   // mousewheel: true,
+  // autoplay: {
+  //   enabled: true,
+  //   delay: 2000,
+  // },
 
   slidesPerView: 1,
   spaceBetween: 40,
@@ -40,8 +44,8 @@ new Swiper(".swiper-container", {
   },
 });
 
-// const sliderContainer = document.querySelector(".swiper-container");
-// const desktopPortfolio = document.querySelector(".desktop-portfolio");
+const sliderContainer = document.querySelector(".swiper-container");
+const desktopPortfolio = document.querySelector(".desktop-portfolio");
 // console.log(sliderContainer);
 
 // const hiddenSlider = () => {

@@ -33,6 +33,7 @@
   height: fit-content;
   overflow: hidden;
   position: relative;
+  display: block;
 
   & .swiper-button-prev,
   & .swiper-button-next {
@@ -40,9 +41,9 @@
     top: auto;
     bottom: 42%;
   }
-  // @media (min-width: $desktop) {
-  //   display: none;
-  // }
+  @media (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .swiper-wrapper {
@@ -111,26 +112,30 @@
 
 //Звідси починаються стилі десктопної версії
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+// .visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+//   white-space: nowrap;
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
 
-  outline: 0;
-  outline-offset: 0;
-  pointer-events: none;
-}
+//   outline: 0;
+//   outline-offset: 0;
+//   pointer-events: none;
+// }
 
 .desktop-portfolio {
   width: 100%;
+  display: none;
+  @media (min-width: $desktop) {
+    display: flex;
+  }
 }
 .desktop-portfolio__list {
   width: 100%;
