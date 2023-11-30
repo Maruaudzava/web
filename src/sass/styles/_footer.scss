@@ -4,6 +4,15 @@
   width: 100%;
   border-top: 1px solid $btnColor;
   padding: 24px;
+
+  @media (min-width: $tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (min-width: $desktop) {
+    padding-left: 106px;
+    padding-right: 106px;
+  }
 }
 
 .footer__container {
@@ -23,9 +32,8 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     gap: 64px;
-    justify-content: center;
-    margin-left: 16px;
-    margin-right: 16px;
+    justify-content: space-between;
+    align-items: center;
 
     & h2 {
       margin-right: 0;
@@ -35,8 +43,6 @@
   @media (min-width: $desktop) {
     gap: 236px;
     justify-content: space-between;
-    margin-left: 82px;
-    margin-right: 82px;
   }
 }
 
@@ -45,6 +51,11 @@
   flex-direction: column;
   gap: 12px;
   align-items: flex-start;
+  font-size: clamp(16px, 2vw, 24px);
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+
   @media (min-width: $desktop) {
     flex-direction: row;
     gap: 88px;
