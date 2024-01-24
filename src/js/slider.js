@@ -1,4 +1,4 @@
-new Swiper(".swiper-container", {
+const swiper = new Swiper(".swiper", {
   // Optional parameters
   //   direction: "",
   loop: true,
@@ -44,8 +44,8 @@ new Swiper(".swiper-container", {
   },
 });
 
-const sliderContainer = document.querySelector(".swiper-container");
-const desktopPortfolio = document.querySelector(".desktop-portfolio");
+// const sliderContainer = document.querySelector(".swiper-container");
+// const desktopPortfolio = document.querySelector(".desktop-portfolio");
 // console.log(sliderContainer);
 
 // const hiddenSlider = () => {
