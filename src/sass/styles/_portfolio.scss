@@ -3,10 +3,10 @@
 #portfolio {
   overflow-x: hidden;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 40px 40px;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     padding: 60px;
   }
 }
@@ -14,11 +14,11 @@
   color: $mainFontColor;
   margin-bottom: 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin-bottom: 90px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop) {
     margin-bottom: 20px;
   }
 
@@ -88,7 +88,7 @@
   height: 8px !important;
   background-color: $btnColor !important;
   top: -1px !important;
-  width: 33% !important;
+  // width: 33% !important;
 }
 
 .swiper-slide {
@@ -112,6 +112,11 @@
   @media (min-width: 768px) {
     margin-bottom: 22px;
   }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 //Звідси починаються стилі десктопної версії
@@ -192,7 +197,9 @@
 .portfolio__button {
   width: 174px;
   height: 52px;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 10px;
   background: $btnColor;

@@ -3,7 +3,7 @@ import { closeModalhandler } from "./modal";
 const form = document.querySelector("#modalForm");
 // const formBtn = document.querySelector("#form__btn");
 
-console.dir(form);
+// console.dir(form);
 
 const sendEmail = () => {
   const templateParams = {
