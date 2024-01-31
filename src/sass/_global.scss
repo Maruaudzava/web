@@ -101,6 +101,10 @@ a {
   &:hover {
     color: $btnColor;
   }
+
+  &:target {
+    color: $btnColor;
+  }
 }
 
 ul {
@@ -113,4 +117,8 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.active {
+  color: $btnColor;
 }

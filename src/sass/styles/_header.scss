@@ -4,7 +4,7 @@
   position: fixed;
   width: 100%;
   padding: 24px 16px;
-  z-index: 1;
+  z-index: 10;
   background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
 
   @media (min-width: $tablet) {
@@ -34,6 +34,15 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+
+  & li {
+    &:active {
+      color: red;
+    }
+    &:visited {
+      color: antiquewhite;
+    }
+  }
 
   @media (min-width: $tablet) {
     justify-content: space-evenly;
