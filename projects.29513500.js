@@ -1,2 +1,0 @@
-var sections=document.querySelectorAll("section");console.log(sections);var navLinks=document.querySelectorAll(".navLink");console.log(navLinks),window.onscroll=function(){sections.forEach((function(o){var e=window.scrollY,n=o.offsetTop-300,t=o.offsetHeight,c=o.getAttribute("id");e>=n&&e<n+t&&navLinks.forEach((function(o){o.classList.remove("active"),document.querySelector(".navLink[href*="+c+"]").classList.add("active")}))}))};
-//# sourceMappingURL=projects.29513500.js.map
