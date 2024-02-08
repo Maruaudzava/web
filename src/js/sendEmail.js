@@ -1,5 +1,9 @@
 import { closeModalhandler } from "./modal";
 
+(function () {
+  emailjs.init("EdEHhqkrh47QPGVKz");
+})();
+
 const form = document.querySelector("#modalForm");
 // const formBtn = document.querySelector("#form__btn");
 
@@ -12,7 +16,7 @@ const sendEmail = () => {
     message: document.getElementById("message").value,
   };
 
-  console.log(templateParams);
+  // console.log(templateParams);
 
   emailjs.send("service_cknjun9", "template_4w4291a", templateParams).then(
     function (response) {
